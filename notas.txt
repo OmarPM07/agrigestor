@@ -54,3 +54,23 @@ git commit -m "feat: inicio del proyecto AgriGestor
 - Autenticación JWT
 - CRUD completo de Parcelas, Cultivos e Insumos
 - Módulo de Reportes con KPIs agrícolas"
+
+Desde este momento cada avance que hagas en el proyecto debe seguir este flujo:
+# 1. Ver qué cambió
+git status
+
+# 2. Agregar los cambios
+git add .
+
+# 3. Hacer commit con mensaje descriptivo
+git commit -m "feat: descripción de lo que agregaste"
+
+# 4. Subir a GitHub
+git push
+
+Convención de mensajes que se ve profesional en el historial:
+feat: nueva funcionalidad
+fix: corrección de error
+refactor: mejora de código sin cambiar funcionalidad
+docs: cambios en documentación
+test: agregar o modificar tests

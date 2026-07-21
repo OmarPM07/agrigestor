@@ -26,4 +26,4 @@ coverage/
 
 # IDEs
 .vscode/
-.idea/
+.idea/staticfiles/

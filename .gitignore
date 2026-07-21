@@ -1,0 +1,29 @@
+# Entorno virtual
+agri_evn/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+
+# Variables de entorno — NUNCA subir a GitHub
+.env
+
+# Base de datos local
+*.sqlite3
+
+# macOS
+.DS_Store
+
+# Tests
+.pytest_cache/
+coverage/
+.coverage
+
+# IDEs
+.vscode/
+.idea/

@@ -1,0 +1,56 @@
+Datos de la BASE de DATOS del proyecto AgriGestor
+DB name = agrigestor_db
+Db user = agrigestor_user
+Password = agrigestor_pass
+
+Datos Superusuario Admin Django
+usuario = admin
+correo = ing.palacios.omar@gmail.com
+password = agrigestoradmin
+
+
+****** Conectarse a la base de datos de Postgres
+psql postgres
+-- Crear y Conectarse a la base de datos del proyecto
+CREATE DATABASE agrigestor_db;
+CREATE USER agrigestor_user WITH PASSWORD 'agrigestor_pass';
+GRANT ALL PRIVILEGES ON DATABASE agrigestor_db TO agrigestor_user;
+
+\c agrigestor_db
+
+-- Otorgar permisos completos sobre el schema public
+GRANT ALL ON SCHEMA public TO agrigestor_user;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO agrigestor_user;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO agrigestor_user;
+
+-- Importante: permisos para tablas que se creen en el futuro
+ALTER DEFAULT PRIVILEGES IN SCHEMA public 
+    GRANT ALL ON TABLES TO agrigestor_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public 
+    GRANT ALL ON SEQUENCES TO agrigestor_user;
+
+-- Salir
+\q
+
+Agregar proyecto a GitHub
+# Inicializa el repositorio
+git init
+
+# Verifica qué archivos se van a subir
+# (confirma que .env NO aparece en la lista)
+git status
+
+# Agrega todos los archivos
+git add .
+
+# Verifica una vez más lo que se va a commitear
+git diff --staged --name-only
+
+# Primer commit
+git commit -m "feat: inicio del proyecto AgriGestor
+
+- Configuración de Django 5 + FastAPI + PostgreSQL
+- Modelos: Usuario, Parcela, Cultivo, AplicacionInsumo
+- Autenticación JWT
+- CRUD completo de Parcelas, Cultivos e Insumos
+- Módulo de Reportes con KPIs agrícolas"

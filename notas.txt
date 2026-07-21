@@ -74,3 +74,21 @@ fix: corrección de error
 refactor: mejora de código sin cambiar funcionalidad
 docs: cambios en documentación
 test: agregar o modificar tests
+
+VARIABLES DE ENTORNO DE RAILWAY
+DEBUG                  = False
+SECRET_KEY             = xderSDeht89DFG87slOPM5896rtiSDOP89dqa712hqlnSPO61
+DJANGO_SETTINGS_MODULE = config.settings.production
+ALLOWED_HOSTS          = *
+
+DB_NAME     = railway
+DB_USER     = postgres
+DB_PASSWORD = XoJGMqxpeDQZvsjNvccsjbJsQOOifwxV
+DB_HOST     = postgres.railway.internal
+DB_PORT     = 5432
+
+JWT_SECRET_KEY      = wopUBD572fmzOasQmndOP469dgtS58ADFneoprd254SDG5694FWULxp
+JWT_ALGORITHM       = HS256
+JWT_EXPIRE_MINUTES  = 60
+
+OPENWEATHER_API_KEY = pendiente

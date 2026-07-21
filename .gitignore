@@ -27,3 +27,6 @@ coverage/
 # IDEs
 .vscode/
 .idea/staticfiles/
+
+# Notas
+notas.txt
